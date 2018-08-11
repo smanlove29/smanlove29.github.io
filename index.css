@@ -129,3 +129,40 @@ img {
     border-radius: 5px 5px 0 0;
     width: 100%;
 }
+
+/* Triangle Border */
+div{
+  float: left;
+  margin: 0.5%;
+}
+.triangle-down {
+    width: 5%;
+    height: 0;    
+    padding-bottom: 5%;
+    overflow: hidden;
+}
+.triangle-down:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid #317873;
+}
+.triangle-up{
+  width: 5%;
+    height: 0;    
+    padding-bottom: 5%;
+  overflow: hidden;
+}
+.triangle-up:after{
+  content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #317873;
+}
