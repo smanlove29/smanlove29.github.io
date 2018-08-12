@@ -69,16 +69,17 @@ div.landing{
     margin-left: auto;
     margin-right: auto;
     background-image: url(sarah_nyc_building.JPG);
-    height: 75%;
-    max-width: 900px;
+    height: 80%;
+    width: 100%;
     background-position: top;
     background-repeat: no-repeat;
     background-size:cover;
 }
 div.landing-content{
-    background: rgba(260,260,260, 0.6);
+    background: rgba(260,260,260, 0.7);
     position: absolute;
-    top: 10;
+    top: 60px;
+    left: 20px;
     width: 50%;
     max-width: 450px;
     padding: 10px;
@@ -94,18 +95,51 @@ a{
     color: #317873;
 }
 
+div.triangle-down, div.triangle-up{
+    float: left;
+}
+.triangle-down {
+    width: 3.5%;
+    height: 0;    
+    padding-bottom: 3.5%;
+    overflow: hidden;
+}
+.triangle-down:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid #317873;
+}
+.triangle-up{
+    width: 3.5%;
+    height: 0;    
+    padding-bottom: 3.5%;
+    overflow: hidden;
+}
+.triangle-up:after{
+  content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 40px solid #317873;
+}
+
 /*Project cards*/
 /* Three columns side by side */
 .projects{
-    height: 50%;
+    margin-top: 100px;
 }
 
 .column {
     float: left;
-    width: 30%;
-    margin-bottom: 10px;
+    width: 32%;
     padding: 0 8px;
-    height: 50%;
 }
 
 /* Display the columns below each other instead of side by side on small screens */
@@ -120,8 +154,15 @@ a{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
-    padding: 2px 2px;
     background-color: #f3f4f9; /* tint of background color */
+    
+}
+.card-container{
+    height: 50px;
+}
+h3{
+    margin: 2%;
+    font-size: 1.1em;
 }
 
 /* Add rounded corners to the top left and the top right corner of the image */
@@ -130,39 +171,53 @@ img {
     width: 100%;
 }
 
-/* Triangle Border */
-div{
-  float: left;
-  margin: 0.5%;
+#lab_social_icon_footer {
+    background-color: #E1E5F2;
+    text-align: center;
+    padding-top: 400px;
+    padding-bottom: 20px;
 }
-.triangle-down {
-    width: 5%;
-    height: 0;    
-    padding-bottom: 5%;
-    overflow: hidden;
+
+#lab_social_icon_footer a {
+  color: #333;
 }
-.triangle-down:after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 40px solid #317873;
+
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
-.triangle-up{
-  width: 5%;
-    height: 0;    
-    padding-bottom: 5%;
-  overflow: hidden;
+
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
 }
-.triangle-up:after{
-  content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 40px solid #317873;
+/*
+    Multicoloured Hover Variations
+*/
+
+#lab_social_icon_footer #social-in:hover {
+  color: #0077B5;
+}
+
+#lab_social_icon_footer #social-gh:hover {
+  color: #6E5494;
+}
+
+#lab_social_icon_footer #social-cp:hover {
+  color: #000000;
+}
+
+#lab_social_icon_footer #social-me:hover {
+  color: #000000;
+}
+
+#lab_social_icon_footer #social-em:hover {
+  color: #DB3236;
 }
