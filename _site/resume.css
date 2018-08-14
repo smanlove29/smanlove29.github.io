@@ -1,142 +1,93 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers - don't include RESET.css in the projects (exept codepen(?)), use NORMALIZE.css only*/
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
 }
 
 
 body {
   background: #E1E5F2; /*gray background*/
   color: #022B3A; /* dark blue/black text */
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   margin: 5% 20% 5% 20%;
 }
 
-.container {
-	margin-bottom: 25px;
+p{
+  padding: 10px;
+  margin: 0;
 }
 
+.container {
+	margin-bottom: 10px;
+}
 
 .info-details{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .title-name {
     color: #317873;/*sea foam green*/
     display: inline-block;
-    font-size: 25px;
-    letter-spacing: 1px;
+    font-size: 1.5em;
     text-transform: uppercase;
-    padding-bottom: 1%;
 }
 
 .contact-info, .links-container {
     color: #317873;/*sea foam green*/
-    font-size: 16px;
-    letter-spacing: 1.2px;
+    font-size: 1.4em;
 }
-
-.contact-info {
-    padding-bottom: 5%;
-    padding-top: 2%;
+.contact-info{
+  padding: 5px 0;
 }
 
 .links {
     text-decoration: none;
-    color: inherit;
     color: #317873;/*sea foam green*/
     display: inline-block;
 }
 
-.links:hover {
-    color: #317873;/*sea foam green*/
-  }
-
 .primary-titles {
     color: #317873;/*sea foam green*/
     display: inline-block;
-    font-size: 16px;
-    line-height: 16px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    padding-top: 10px;
+    font-size: 1.2em;
 }
 
 
 .location {
   color: #022B3A; /* dark blue/black text */
   display: inline-block;
-  font-size: 13px;
-  letter-spacing: 2px;
+  font-size: .8em;
 }
 
 .category-titles {
   color: #317873;/*sea foam green*/
-  font-size: 16px;
+  font-size: 1.2em;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 5px;
 }
 
 .category-details {
     color: #022B3A; /* dark blue/black text */
-    font-size: 13px;
-    padding-top: 10px;
-	padding-bottom: 15px;
+    font-size: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
+
 }
 
 .category-description-main {
   color: #022B3A; /* dark blue/black text */
-  font-size: 13px;
-  line-height: 18px;
-  padding-top: 10px;
+  font-size: 1em;
+
 }
 
 .category-description {
     color: #022B3A; /* dark blue/black text */
-    font-size: 13px;
-    line-height: 18px;
-    padding-top: 10px;
-	padding-bottom: 15px;
+
+}
+ul{
+  list-style-type: square;
+  padding-top: 0;
 }
 
 
@@ -149,22 +100,6 @@ hr {
 
 
 @media only screen and (min-width: 480px) {
-    .primary-tites {
-        font-size: 16px;
-        line-height: 16px;
-        letter-spacing: 1px;
-        text-decoration: none;
-
-
+    .primary-titles {
+        font-size: 1.4em;
     }
-
-.category-description {
-
-}
-
-
-@media only screen and (max-width: 500px) {
-    .prof-expirience {
-        margin-top: 10%;
-}
-}
