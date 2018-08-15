@@ -21,7 +21,7 @@
             <div class="topnav" id="myTopnav">
                 <a href="index.html">Sarah Manlove</a>
                 <a href="#projects">Projects</a>
-                <a href="resume.html">My Resume</a>
+                <a href="resume.html">CV</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -33,7 +33,20 @@
                 <h1>Hello!</h1>
                 <h2>I'm Sarah.</h2>
                 <p>I'm an aspiring web developer and UX designer. Feel free to <a href="mailto:smanlove29@gmail.com">send me a message</a>! Can't wait to chat with you.</p>
-
+                <div class="btn-container">
+                  <a href="Sarah_Manlove_Resume.pdf" class="btn">
+                    <svg width="277" height="62">
+                      <defs>
+                        <linearGradient id="grad1">
+                          <stop offset="0%" stop-color="#83aeab"/>
+                          <stop offset="100%" stop-color="#317873" />
+                        </linearGradient>
+                      </defs>
+                      <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
+                    </svg>
+                    <span>Download my resume</span>
+                  </a>
+                </div>
             </div>
         </div>
 
@@ -53,10 +66,11 @@
         </div>
 
         <div class="projects">
-            <a id="projects"><h2>Projects</h2></a>
+            <a id="projects"><h2 class="projects">Projects</h2></a>
 
             <div class="column">
-                <a class="project" href="https://devpost.com/software/five-colleges-dog-spotter"><div class="card">
+                <a class="project" href="https://devpost.com/software/five-colleges-dog-spotter">
+                  <div class="card">
                   <div class="overlay-container">
                     <img src="dogsStock.jpg" alt="Dog" class="image">
                     <div class="overlay">
@@ -71,7 +85,8 @@
             </div>
 
             <div class="column">
-                <a class="project" href="https://usit-umass.github.io/"><div class="card">
+                <a class="project" href="https://usit-umass.github.io/">
+                  <div class="card">
                   <div class="overlay-container">
                     <img src="codeStock.jpg" alt="Code" class="image">
                     <div class="overlay">
@@ -86,7 +101,8 @@
             </div>
 
             <div class="column">
-                <a class="project" href="http://www.hackher413.com/"><div class="card">
+                <a class="project" href="http://www.hackher413.com/">
+                  <div class="card">
                   <div class="overlay-container">
                     <img src="hackher413bee.png" alt="HackHer413 Logo" class="image">
                     <div class="overlay">
@@ -101,7 +117,8 @@
             </div>
 
             <div class="column">
-                <a class="project" href="Protect-User-Data-Mobile-Health-Applications.pdf"><div class="card">
+                <a class="project" href="Protect-User-Data-Mobile-Health-Applications.pdf">
+                  <div class="card">
                   <div class="overlay-container">
                     <img src="smartwatchStock.jpg" alt="Smart watch" class="image">
                     <div class="overlay">
@@ -109,26 +126,17 @@
                     </div>
                   </div>
                     <div class="card-container">
-                        <h3>Research Paper on Protection of User Data on Mobile Health Applications</h3> <!-- Photo by Crew on Unsplash -->
-                    </div></a>
+                        <h3>Research Paper on Protection of User Data on Mobile Health Applications</h3>  <!--Photo by Crew on Unsplash -->
+                  </div></a>
                 </div>
             </div>
         </div>
 
-        <div class="btn-container">
-          <a href="resume.html" class="btn">
-            <svg width="277" height="62">
-              <defs>
-                <linearGradient id="grad1">
-                  <stop offset="0%" stop-color="#83aeab"/>
-                  <stop offset="100%" stop-color="#317873" />
-                </linearGradient>
-              </defs>
-              <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
-            </svg>
-            <span>Download my resume</span>
-          </a>
-        </div>
+
+
+        <footer class="footer">
+	         <p>&copy; 2018 Sarah Manlove</p>
+        </footer>
 
 
 
@@ -142,9 +150,7 @@
                 }
             }
         </script>
+
     </body>
-
-
-
 
 </html>

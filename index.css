@@ -64,6 +64,7 @@ credit: w3schools.com */
 
 /* ------ CONTENT ------ */
 
+
 /* picture on landing */
 div.landing{
     margin-left: auto;
@@ -153,16 +154,20 @@ p.about{
 }
 
 /*Project cards*/
-/* Three columns side by side */
+/* Two columns side by side */
 .projects{
-
+    padding-bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .column {
-    float: left;
-    width: 32%;
-    padding: 0 8px;
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    padding-top: 10px;
 }
+
 
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
@@ -177,15 +182,17 @@ p.about{
     transition: 0.3s;
     border-radius: 5px; /* 5px rounded corners */
     background-color: #f3f4f9; /* tint of background color */
-    margin-bottom: 20px;
+    max-width: 500px;
 
 }
 .card-container{
     height: 50px;
 }
+
 h3{
     margin: 2%;
     font-size: 1.1em;
+    text-align: left;
 }
 
 /* Add rounded corners to the top left and the top right corner of the image */
@@ -193,10 +200,18 @@ img {
     border-radius: 5px 5px 0 0;
     width: 100%;
     max-height: 250px;
+    max-width: 500px;
 }
 #projects{
   color: #022B3A;
 }
+h2.projects{
+  text-align: left;
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
 a.project{
   color: #022B3A;
   text-decoration: none;
@@ -225,7 +240,7 @@ a.project{
 }
 
 .overlay-text {
-  color: white;
+  color: #fff;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -237,10 +252,10 @@ a.project{
 }
 
 .btn-container{
-  height:100%;
+    padding-bottom: 10px;
 }
+
 .btn {
-    padding: 100px 100px;
     position: relative;
     display: inline-block;
     width: 277px;
@@ -261,8 +276,8 @@ a.project{
 
 .btn svg {
     position: absolute;
-    top: 100px;
-    left: 100px;
+    top: 0;
+    left: 0;
 }
 
 .btn svg rect {
@@ -281,4 +296,13 @@ a.project{
     stroke-width: 4;
     stroke-dasharray: 196, 543;
     stroke-dashoffset: 437;
+}
+
+footer{
+    background-color: #317873;/*sea foam green*/
+    color: #fff;
+
+    text-align: center;
+    margin-top: 50px;
+
 }
