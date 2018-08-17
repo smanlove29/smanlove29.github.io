@@ -156,6 +156,7 @@ p.about{
 /*Project cards*/
 /* Two columns side by side */
 .projects{
+    padding-top: 25px;
     padding-bottom: 0;
     width: 100%;
     text-align: center;
@@ -301,8 +302,30 @@ a.project{
 footer{
     background-color: #317873;/*sea foam green*/
     color: #fff;
-
     text-align: center;
     margin-top: 50px;
+}
 
+/* Easter Eggs */
+#rocket{
+  display: none;
+  position: absolute;
+  padding: 60px;
+
+  -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Safari */
+    transform: rotate(45deg);
+    animation-name: blast-off;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes blast-off {
+    0%   {left:0%; top:100%;}
+    100% {left:100%; top:100%;}
+}
+
+.space{
+  cursor: pointer;
+  color: #022B3A; /* dark blue/black text */
 }
