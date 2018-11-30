@@ -191,15 +191,16 @@ p.about{
 }
 
 h3{
-    margin: 2%;
-    font-size: 1.1em;
-    text-align: left;
+  margin: 2%;
+  font-size: 1.1em;
+  text-align: left;
 }
 
 /* Add rounded corners to the top left and the top right corner of the image */
 img {
     border-radius: 5px 5px 0 0;
     width: 100%;
+    min-height: 250px;
     max-height: 250px;
     max-width: 500px;
 }
