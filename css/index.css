@@ -1,0 +1,71 @@
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+h1, h2{
+    margin-left: 15px;
+}
+p{
+    margin-left: 15px;
+}
+a{
+    color: #317873;
+}
+.bg-image{
+  
+}
+#lab_social_icon {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#lab_social_icon a {
+  color: #333;
+}
+
+#lab_social_icon .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#lab_social_icon .social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+/*
+    Multicoloured Hover Variations
+*/
+
+#lab_social_icon #social-in:hover {
+  color: #0077B5;
+}
+
+#lab_social_icon #social-gh:hover {
+  color: #6E5494;
+}
+
+#lab_social_icon #social-cp:hover {
+  color: #000000;
+}
+
+#lab_social_icon #social-me:hover {
+  color: #000000;
+}
+
+#lab_social_icon #social-em:hover {
+  color: #DB3236;
+}
