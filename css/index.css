@@ -1,11 +1,15 @@
 html{
     height: 100%;
+    margin: 0;
+    padding:0;
 }
 
 body{
     margin: 0;
     height: 100%;
-    font-family: 'Open Sans', sans-serif;
+}
+nav{
+  margin: 0;
 }
 
 #lab_social_icon {
@@ -59,11 +63,14 @@ body{
 
 ul,li{
   list-style:none;
-  float: right;
+  margin: 0;
+
 }
 ul{
   overflow:hidden;
-  height: 300px;
+  height: 100%;
+  padding-bottom: 10%;
+  text-align: right;
 }
 ul li a{
   font-family: 'Shadows Into Light', cursive;
@@ -74,7 +81,8 @@ ul li a{
   display:block;
   height:75px;
   width:150px;
-  padding-top: 5px;
+  padding-top: 5%;
+  padding-bottom: 5%;
   text-align: center;
   -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
   -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
@@ -82,15 +90,13 @@ ul li a{
   -moz-transition:-moz-transform .15s linear;
   -o-transition:-o-transform .15s linear;
   -webkit-transition:-webkit-transform .15s linear;
-}
-ul li{
-  margin:20px;
-  float:left;
-}
-ul li a{
   -webkit-transform: rotate(-6deg);
   -o-transform: rotate(-6deg);
   -moz-transform:rotate(-6deg);
+}
+ul li{
+  margin: 20px 30px;
+  display: inline-block;
 }
 
 ul li a:hover{
@@ -129,10 +135,115 @@ ul li a:hover,ul li a:focus{
   z-index:5;
 }
 
-h1{
-  /* font-family: 'Knewave', cursive; */
-  font-family: 'Permanent Marker', cursive;
+h1.home{
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 7em;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left:50%;
 }
+
+
+a.connect{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  position: absolute;
+  top:65%;
+  left:50%;
+  color: #000;
+  padding: 0 6px 2px 6px;
+  cursor: pointer;
+  text-decoration: none;
+  background: linear-gradient(to bottom, transparent 50%, #5fc9f8 0) center center/0% 75% no-repeat;
+  }
+  .connect:hover {
+    background-size: 100% 100%;
+    text-decoration: none;
+    color: #000;
+  }
+  .connect:active {
+    background-size: 80% 100%;
+    text-decoration: none;
+  }
+  .text-container {
+    z-index: 1;
+    background-color: #fff;
+  }
+
+  .sticky {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2.5em;
+    -webkit-box-shadow: #DDD 0px 1px 2px;
+    position: absolute;
+    background-color: #42EDB9;
+    border-color: #DEE184;
+    color: #000;
+    text-align: center;
+    margin: 2.5em 0px;
+    padding: 1em;
+    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+    width: 250px;
+    height: 200px;
+  }
+  .post-it {
+    display: table;
+    margin: 5em auto 0;
+  }
+  .taped {
+    display: table-cell;
+    text-align: center;
+  }
+  .sticky.taped:after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    top: -21px;
+    left: 30%;
+    border: 1px solid #fff;
+    background: rgba(254, 254, 254, .6);
+    -webkit-box-shadow: 0px 0 3px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0 3px rgba(0,0,0,0.1);
+    box-shadow: 0px 0 3px rgba(0,0,0,0.1);
+  }
+
+  .first{
+    top: 15%;
+    left: 10%;
+  }
+
+  .second{
+    top: 30%;
+    left: 23%;
+  }
+
+  .third{
+    top: 45%;
+    left: 5%;
+    margin-bottom: 0;
+  }
+
+  /* .doodle{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    width: 150px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    stroke-width: 2;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 3s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+} */
