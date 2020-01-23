@@ -141,7 +141,7 @@ h1.home{
     display: table-cell;
     text-align: center;
   }
-  .sticky.taped:after {
+  .taped:after {
     display: block;
     content: "";
     position: absolute;
@@ -200,4 +200,21 @@ img.bigGear{
 		to {
 				-webkit-transform: rotate(359deg);
 		}
+  }
+
+  /* ABOUT */
+  #about{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #about_heading{
+    text-align: center;
+  }
+
+  .about_para{
+
+  }
+
+  .about_pic{
+    width: 300px;
   }
